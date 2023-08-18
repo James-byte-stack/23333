@@ -20,7 +20,7 @@ int main(int argc, char **argv){
     } else {
         printf("DIFFERENT\n");
     }
-
+    //free the memory
     free(image1.pixels);
     free(image2.pixels);
     return 0;
