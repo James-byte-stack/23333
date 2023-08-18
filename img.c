@@ -77,6 +77,7 @@ int writePGMImage( char* filename,  PGMImage* image, char format){
     //Open the file
     FILE* file = fopen(filename, "wb");
     int i;
+    //Error check for invalid file name
     if (file == NULL) {
         printf("ERROR: Bad File Name (%s)\n", filename);
         return 2;
