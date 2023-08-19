@@ -10,6 +10,7 @@ int main(int argc, char **argv){
         printf("ERROR: Bad Argument Count\n");
         return 1;
     }
+    //convert ascII to binary
     int covertResult = pgma2b(argv[1],argv[2]);
     if (covertResult != 0) {
         return covertResult;
