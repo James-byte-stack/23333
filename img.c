@@ -77,7 +77,6 @@ int writePGMImage( char* filename,  PGMImage* image, char format){
     //Open the file
     FILE* file = fopen(filename, "wb");
     int i;
-    //Error check for invalid file name
     if (file == NULL) {
         printf("ERROR: Bad File Name (%s)\n", filename);
         return 2;
@@ -109,7 +108,7 @@ int readPGMFormat( char* filename) {
     int formatNum = atoi(format + 1);
     return formatNum;
 }
-
+//convert the PGMImage
 int convertPGMImage( char* inputFile,  char* outputFile){
 PGMImage image;
     int i ;
