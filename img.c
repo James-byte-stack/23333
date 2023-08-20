@@ -144,7 +144,7 @@ int readResult = readPGMImage(inputFile,&image);
 }
 int pgma2b( char *inputFile,  char *outputFile) {
     PGMImage image;
-
+    // Error check for bad data
     if (!readPGMImage(inputFile, &image)) {
         printf("ERROR: Bad Data (%s)\n", inputFile);
         return 8;
